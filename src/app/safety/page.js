@@ -1,13 +1,11 @@
 "use client";
 
-import HomepageBody from "@/components/HomepageBody";
 import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Cansat() {
 	return (
 		<main className="bg-tertiary w-auto font-mono">
 			<Navbar />
-			<HomepageBody />
 		</main>
 	);
 }
