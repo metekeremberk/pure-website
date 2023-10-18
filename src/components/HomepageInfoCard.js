@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomepageInfoCard({
 	title,
 	paragraph,
@@ -14,12 +16,12 @@ export default function HomepageInfoCard({
 						<h1 className="text-3xl p-5">{title}</h1>
 						<p className="text-lg p-5">{paragraph}</p>
 						<div className="pl-5 w-full">
-							<a
+							<Link
 								className="bg-secondary text-light text-lg py-2 px-4 rounded-md hover:bg-primary"
 								href={pageLink}
 							>
 								More
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>
