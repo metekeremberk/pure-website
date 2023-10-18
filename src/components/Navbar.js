@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cansat, tavsiyeler, talimatlar } from "@/content";
 import Arrow from "../../public/arrow.svg";
+import Parachute from "../../public/parachute.svg";
 
 function NavLink({ href, title, content }) {
   return (
@@ -47,7 +48,7 @@ function NavButton({ items, title }) {
 export default function Navbar() {
   return (
     <div className="sticky top-0 flex h-20 items-center justify-between border-b bg-white px-10">
-      <h1 className="cursor-default">Logo</h1>
+      <Image src={Parachute} height={40} className="-rotate-[30deg]" />
       <ul className="flex flex-row items-center gap-5">
         <NavButton items={cansat} title={"CanSat"} />
         <NavButton items={talimatlar} title={"Talimatlar"} />
