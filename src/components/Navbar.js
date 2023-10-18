@@ -28,13 +28,14 @@ function NavButton({ items, title }) {
           className="transition-transform delay-75 duration-300 group-hover:rotate-180"
         />
       </button>
-      <div className="absolute top-14 flex w-80 scale-0 flex-col gap-2 rounded-lg border bg-white p-2 transition-all delay-75 group-hover:scale-100">
-        {items.map((item) => {
+      <div className="absolute top-12 flex w-80 scale-0 flex-col gap-2 rounded-lg border bg-white p-2 transition-all delay-75 group-hover:scale-100">
+        {items.map((item, index) => {
           return (
             <NavLink
               href={item.href}
               title={item.title}
               content={item.content}
+              key={index}
             />
           );
         })}
@@ -45,14 +46,14 @@ function NavButton({ items, title }) {
 
 export default function Navbar() {
   return (
-    <div className="flex h-20 items-center justify-between border-b px-10">
+    <div className="sticky top-0 flex h-20 items-center justify-between border-b bg-white px-10">
       <h1 className="cursor-default">Logo</h1>
-      <ul className="flex flex-row gap-5">
+      <ul className="flex flex-row items-center gap-5">
         <NavButton items={cansat} title={"CanSat"} />
         <NavButton items={talimatlar} title={"Talimatlar"} />
         <NavButton items={tavsiyeler} title={"Tavsiyeler"} />
+        <Link href="/">Anasayfa</Link>
       </ul>
-      {/* <Link href="/">Anasayfa</Link> */}
     </div>
   );
 }
