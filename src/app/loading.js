@@ -10,7 +10,6 @@ export default function loading() {
           <Skeleton className="h-12 w-32" />
           <Skeleton className="h-12 w-32" />
           <Skeleton className="h-12 w-32" />
-          <Skeleton className="h-12 w-32" />
         </ul>
       </div>
     </main>

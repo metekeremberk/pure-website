@@ -58,7 +58,12 @@ export default function Navbar() {
             href="/"
             className="flex w-36 flex-grow flex-col justify-end rounded bg-slate-100 p-4 font-medium"
           >
-            <p className="py-2">CanSat</p>
+            <Image
+              src={Parachute}
+              height={25}
+              className="ml-12 rotate-[30deg]"
+            />
+            <p className="-rotate-[10deg] pb-3">CanSat</p>
             <div className="line-clamp-4 text-sm font-light text-gray-600">
               Cansat, düşük maliyetli ve kompakt bir uydu benzeri cihazdır.
               Genellikle eğitim ve araştırma amaçları için kullanılır.
