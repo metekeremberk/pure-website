@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { cansat, tavsiyeler, talimatlar } from "@/content";
-import Arrow from "../../public/arrow.svg";
-import Parachute from "../../public/parachute.svg";
+import Arrow from "../../public/navbar/arrow.svg";
+import Parachute from "../../public/navbar/parachute.svg";
 
 function NavLink({ href, title, content }) {
   return (

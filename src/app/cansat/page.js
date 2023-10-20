@@ -18,8 +18,9 @@ export default function Cansat() {
               platformdan veya hava balonundan bırakılır ve görevi başlar:
               bilimsel bir deney yapmak ve güvenli bir iniş gerçekleştirmektir.
             </p>
+            <br />
             <p>
-              CanSats, öğrencilere gerçek bir uzay projesinin ilk pratik
+              CanSat, öğrencilere gerçek bir uzay projesinin ilk pratik
               deneyimini yaşama fırsatı sunar. Öğrenciler, CanSat'ı tasarlama,
               misyonunu seçme, bileşenleri entegre etme, test etme, fırlatmaya
               hazırlık yapma ve verileri analiz etme gibi tüm yönlerden

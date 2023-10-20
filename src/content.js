@@ -18,17 +18,10 @@ export const cansat = [
 
 export const talimatlar = [
   {
-    title: "Güvenlik Talimatları",
+    title: "CanSat Yapımında Adımlar",
     content:
-      "Cansat'ın yüksek irtifalarda çalıştığına dikkat etmeli ve yerel yetkililerden izin almalıyız. Ayrıca, elektronik montajlarımızı doğru bir şekilde yapmalıyız.",
-    href: "/guvenlik-talimatlari",
-  },
-
-  {
-    title: "Montaj ve Test Talimatları",
-    content:
-      "Cansat'ı monte etmek için kendi tasarımımızı kullanıyoruz. Montaj ve test aşamalarını adım adım açıklayan talimatlarımızı bulabilirsiniz.",
-    href: "/montaj-test-talimatlari",
+      "CanSat yapılışında yapılması gereken aktiviteler adım adım bulunmaktadır.",
+    href: "/adim-adim",
   },
   {
     title: "Test Raporları",
