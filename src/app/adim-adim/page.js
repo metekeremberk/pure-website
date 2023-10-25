@@ -1,34 +1,14 @@
-"use client";
-
-import Navbar from "@/components/Navbar";
-import React, { useEffect, useState } from "react";
-import { adim_adim } from "./content";
-import Drawer from "@/components/Drawer";
-
 export default function Cansat() {
-  const [index, setIndex] = useState(0);
-  const [displayedContent, setDisplayedContent] = useState(
-    adim_adim[index].content,
-  );
-
-  const handleClick = (x) => {
-    setIndex(x);
-  };
-
-  useEffect(() => {
-    console.log(index);
-    setDisplayedContent(adim_adim[index].content);
-  }, [index]);
-
   return (
-    <main className="flex h-screen w-auto flex-col">
-      <Navbar />
-      <div className="flex h-full w-auto items-stretch justify-center">
-        <Drawer func={handleClick} list={adim_adim} />
-        <div className="flex basis-3/4 items-center justify-center">
-          {displayedContent}
-        </div>
+    <div className="child:border-b child:p-4 mx-5 flex flex-col">
+      <div>
+        <h1 className="pb-6 pt-2 text-3xl">CanSat Yapımında Adımlar</h1>
+        <p>Bu kılavuzda CanSat yapımında gerekli adımları göreceksiniz.</p>
       </div>
-    </main>
+      <div>
+        <h3 className="pb-5 pt-2 text-2xl">Bu Kılavuzun İçeriği</h3>
+        <p></p>
+      </div>
+    </div>
   );
 }

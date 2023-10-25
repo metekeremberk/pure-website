@@ -50,7 +50,7 @@ function NavButton({ items, title, children }) {
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 flex h-20 items-center justify-between border-b bg-white px-10">
+    <div className="sticky top-0 flex h-[10vh] items-center justify-between border-b bg-white px-10">
       <Image src={Parachute} height={40} className="-rotate-[30deg]" />
       <ul className="flex flex-row items-center gap-5">
         <NavButton items={cansat} title={"CanSat"}>
