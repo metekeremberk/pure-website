@@ -30,11 +30,13 @@ export default function ArduinoIDEKurulumu() {
             src={ideSetupImages[0]}
             className="mx-auto shadow-lg"
             alt="ideSetup1"
+            placeholder="blur"
           />
           <Image
             src={ideSetupImages[1]}
             className="mx-auto shadow-lg"
             alt="ideSetup2"
+            placeholder="blur"
           />
         </div>
       </div>
@@ -48,6 +50,7 @@ export default function ArduinoIDEKurulumu() {
           src={ideSetupImages[2]}
           className="mx-auto my-8 shadow-lg"
           alt="ideSetup3"
+          placeholder="blur"
         />
         <p>
           Arduino IDE kurulum sihirbazı açıldığında bu pencere ile
@@ -57,6 +60,7 @@ export default function ArduinoIDEKurulumu() {
           src={ideSetupImages[3]}
           className="mx-auto my-8 shadow-lg"
           alt="ideSetup4"
+          placeholder="blur"
         />
         <p>
           Sonraki pencerede ise Arduino IDE'nin bilgisayarınızda hangi
@@ -70,6 +74,7 @@ export default function ArduinoIDEKurulumu() {
           src={ideSetupImages[4]}
           className="mx-auto my-8 shadow-lg"
           alt="ideSetup5"
+          placeholder="blur"
         />
         <p>
           Sonraki pencerede ise Arduino IDE'nin bilgisayarınızda nereye
@@ -80,6 +85,7 @@ export default function ArduinoIDEKurulumu() {
           src={ideSetupImages[5]}
           className="mx-auto my-8 shadow-lg"
           alt="ideSetup6"
+          placeholder="blur"
         />
         <p>
           "Kur" düğmesine bastıktan sonra bu pencerede Arduino IDE'nin
@@ -89,6 +95,7 @@ export default function ArduinoIDEKurulumu() {
           src={ideSetupImages[6]}
           className="mx-auto my-8 shadow-lg"
           alt="ideSetup7"
+          placeholder="blur"
         />
         <p>
           "Bitir" düğmesine basarak Arduino IDE kurulumunu bitirebilirsiniz.
@@ -97,6 +104,7 @@ export default function ArduinoIDEKurulumu() {
           src={ideSetupImages[7]}
           className="mx-auto my-8 shadow-lg"
           alt="ideSetup8"
+          placeholder="blur"
         />
       </div>
       <div>
@@ -109,6 +117,7 @@ export default function ArduinoIDEKurulumu() {
           src={ideSetupImages[8]}
           className="mx-auto my-8 shadow-lg"
           alt="ideSetup9"
+          placeholder="blur"
         />
       </div>
     </div>

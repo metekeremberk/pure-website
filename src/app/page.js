@@ -12,6 +12,7 @@ export default function Home() {
           width={300}
           height={300}
           className="h-[300px] w-[300px] rounded border object-contain p-3"
+          placeholder="blur"
         />
         <div className="flex flex-col justify-around gap-4 p-2 pl-5">
           <h1 className="pt-10 text-3xl font-medium">CanSat Nedir?</h1>
