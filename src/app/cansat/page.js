@@ -5,15 +5,15 @@ export default function Cansat() {
     <div className="flex h-full flex-col items-center justify-center">
       <div className="w-1/2">
         <h1 className="pb-16 text-6xl">CanSat Nedir?</h1>
-        <div className="child:pb-5 text-lg leading-loose">
+        <div className="text-lg leading-loose child:pb-5">
           <p>
-            A CanSat, gerçek bir uydu simülasyonudur ve bir gazoz kutusunun
-            hacmi ve şekli içine entegre edilir. Öğrenciler için meydan okuma,
-            bir uydu içinde bulunan ana alt sistemleri, güç, sensörler ve
-            iletişim sistemini bu sınırlı hacme sığdırmaktır. CanSat daha sonra
-            bir roketle birkaç yüz metre yüksekliğe fırlatılır veya bir
-            platformdan veya hava balonundan bırakılır ve görevi başlar:
-            bilimsel bir deney yapmak ve güvenli bir iniş gerçekleştirmektir.
+            CanSat, gerçek bir uydu simülasyonudur ve bir gazoz kutusunun hacmi
+            ve şekli içine entegre edilir. Öğrenciler için meydan okuma, bir
+            uydu içinde bulunan ana alt sistemleri, güç, sensörler ve iletişim
+            sistemini bu sınırlı hacme sığdırmaktır. CanSat daha sonra bir
+            roketle birkaç yüz metre yüksekliğe fırlatılır veya bir platformdan
+            veya hava balonundan bırakılır ve görevi başlar: bilimsel bir deney
+            yapmak ve güvenli bir iniş gerçekleştirmektir.
           </p>
           <br />
           <p>

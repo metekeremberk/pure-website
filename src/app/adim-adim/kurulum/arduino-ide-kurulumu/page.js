@@ -15,11 +15,13 @@ export default function ArduinoIDEKurulumu() {
         <h3 className="pb-5 pt-2 text-2xl">Arduino IDE İndirme</h3>
         <p>
           Arduino IDE'yi indirmek için Arduino'nun resmi{" "}
-          <span className="underline hover:text-gray-500">
-            <a href={"https://www.arduino.cc/en/software"} target="_blank">
-              web sitesini
-            </a>
-          </span>{" "}
+          <a
+            href={"https://www.arduino.cc/en/software"}
+            target="_blank"
+            className="underline hover:text-gray-500"
+          >
+            web sitesini
+          </a>{" "}
           ziyaret edin. Web sitesine gidin ve "Download Options" bölümünden
           bilgisayarınıza uygun olan Arduino IDE sürümünü seçin. Sonrasında
           açılan sayfada "Just Download" düğmesine basarak indirme işlemini

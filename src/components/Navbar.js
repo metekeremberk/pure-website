@@ -4,11 +4,12 @@ import { cansat, tavsiyeler, talimatlar } from "@/content";
 import Arrow from "../../public/navbar/arrow.svg";
 import Parachute from "../../public/navbar/parachute.svg";
 
-function NavLink({ href, title, content }) {
+function NavLink({ href, title, content, newTab }) {
   return (
     <Link
       href={href}
-      className="h-20 w-72 rounded p-2 font-medium hover:bg-slate-200"
+      className="h-20 w-72 rounded p-2 font-medium transition-colors hover:bg-slate-200"
+      target={newTab == true ? "_blank" : ""}
     >
       {title}
       <div className="line-clamp-2 text-sm font-light text-gray-600">
@@ -38,6 +39,7 @@ function NavButton({ items, title, children }) {
                 href={item.href}
                 title={item.title}
                 content={item.content}
+                newTab={item?.newTab}
                 key={index}
               />
             );
@@ -56,7 +58,7 @@ export default function Navbar() {
         <NavButton items={cansat} title={"CanSat"}>
           <Link
             href="/"
-            className="flex w-36 flex-grow flex-col justify-end rounded bg-slate-100 p-4 font-medium"
+            className="flex w-36 flex-grow flex-col justify-end rounded bg-slate-100 p-4 font-medium transition-colors hover:bg-slate-200"
           >
             <Image
               src={Parachute}

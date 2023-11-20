@@ -12,11 +12,17 @@ export const cansat = [
   {
     title: "CanSat Kodları",
     content: "Mevcut CanSat kodları",
-    href: "https://github.com/metekeremberk/pure-website",
+    href: "https://github.com/exeokan/cansat_pure23/",
+    newTab: true,
   },
 ];
 
 export const talimatlar = [
+  {
+    title: "Zaman Çizelgesi",
+    content: "CanSat yapılışını öğrenirken günlerinin nasıl geçeceğini öğren.",
+    href: "/zaman-cizelgesi",
+  },
   {
     title: "CanSat Yapımında Adımlar",
     content:
@@ -32,6 +38,11 @@ export const talimatlar = [
 ];
 
 export const tavsiyeler = [
+  {
+    title: "Güvenlik Talimatları",
+    content: "CanSat yapımına başlamadan önce güvenlik kurallarına göz at.",
+    href: "/guvenlik",
+  },
   {
     title: "Örnek Uygulamalar",
     content:
