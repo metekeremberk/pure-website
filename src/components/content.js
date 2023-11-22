@@ -24,24 +24,24 @@ export const talimatlar = [
     href: "/zaman-cizelgesi",
   },
   {
-    title: "CanSat Yapımında Adımlar",
+    title: "CanSat Kursunun İçeriği",
     content:
       "CanSat yapılışında yapılması gereken aktiviteler adım adım bulunmaktadır.",
-    href: "/adim-adim",
+    href: "/icerik",
   },
   {
-    title: "Test Raporları",
-    content:
-      "Önceki yıllarda yaptığımız testlere ve deneylere dair ayrıntılı raporlar, projemizin belgeleri arasında bulunmaktadır.",
-    href: "/test-raporlari",
+    title: "Güvenlik Talimatları",
+    content: "CanSat yapımına başlamadan önce güvenlik kurallarına göz at.",
+    href: "/guvenlik",
   },
 ];
 
 export const tavsiyeler = [
   {
-    title: "Güvenlik Talimatları",
-    content: "CanSat yapımına başlamadan önce güvenlik kurallarına göz at.",
-    href: "/guvenlik",
+    title: "Test Raporları",
+    content:
+      "Önceki yıllarda yaptığımız testlere ve deneylere dair ayrıntılı raporlar, projemizin belgeleri arasında bulunmaktadır.",
+    href: "/test-raporlari",
   },
   {
     title: "Örnek Uygulamalar",

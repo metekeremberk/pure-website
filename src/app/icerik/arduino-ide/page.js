@@ -3,7 +3,7 @@ import { ideSetupImages } from "./imports";
 
 export default function ArduinoIDEKurulumu() {
   return (
-    <div className="child:border-b child:p-4 mx-5 flex flex-col">
+    <div className="mx-5 flex flex-col child:border-b child:p-4">
       <div>
         <h1 className="pb-6 pt-2 text-3xl">Arduino IDE Kurulumu</h1>
         <p>
@@ -111,16 +111,56 @@ export default function ArduinoIDEKurulumu() {
       </div>
       <div>
         <h3 className="pb-5 pt-2 text-2xl">Arduino IDE Kurulum Sonrası</h3>
-        <p>
-          Arduino IDE kurulumu bittikten sonra uygulamayı açınca buna benzer bir
-          pencere ile karşılaşacaksınız.
-        </p>
-        <Image
-          src={ideSetupImages[8]}
-          className="mx-auto my-8 shadow-lg"
-          alt="ideSetup9"
-          placeholder="blur"
-        />
+        <div>
+          <p>
+            Arduino IDE kurulumu bittikten sonra uygulamayı açınca buna benzer
+            bir pencere ile karşılaşacaksınız.
+          </p>
+          <Image
+            src={ideSetupImages[8]}
+            className="mx-auto my-8 shadow-lg"
+            alt="ideSetup9"
+            placeholder="blur"
+          />
+        </div>
+        <div>
+          <p>
+            Gerekli kütüphaneleri indirmek için "File-{">"}Preferences" menüsüne
+            tıklayın.
+          </p>
+          <Image
+            src={ideSetupImages[9]}
+            className="mx-auto my-8 shadow-lg"
+            alt="ideSetup9"
+            placeholder="blur"
+          />
+        </div>
+        <div>
+          <p>Bu menüde en aşağıda "Additional boards managers URLs" kısmına</p>
+          <p className="underline">
+            "https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json"
+          </p>
+          <p>yapıştırıp OK tuşuna basın.</p>
+          <Image
+            src={ideSetupImages[10]}
+            className="mx-auto my-8 shadow-lg"
+            alt="ideSetup9"
+            placeholder="blur"
+          />
+        </div>
+        <div>
+          <p>
+            "Board Manager" menüsünü açıp "esp32 Espressif Systems" tarafından
+            yüklenmiş ESP32 WROOM kütüphanelerini indirmek için "Install" tuşuna
+            basınız.
+          </p>
+          <Image
+            src={ideSetupImages[11]}
+            className="mx-auto my-8 shadow-lg"
+            alt="ideSetup9"
+            placeholder="blur"
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { kurallar, telemetri } from "@/content";
+import { kurallar, telemetri } from "@/components/content";
 
 export default function Cansat() {
   return (

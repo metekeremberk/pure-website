@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { cansat, tavsiyeler, talimatlar } from "@/content";
+import { cansat, tavsiyeler, talimatlar } from "@/components/content";
 import Arrow from "../../public/navbar/arrow.svg";
 import Parachute from "../../public/navbar/parachute.svg";
 
