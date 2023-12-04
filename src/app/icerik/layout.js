@@ -7,11 +7,13 @@ function Drawer() {
     { href: "/bilesenler", desc: "CanSat Alt Sistemleri ve Bileşenleri" },
     { href: "/arduino-ide", desc: "Arduino IDE Kurulumu" },
     { href: "/blink-test", desc: "ESP32 ile Blink kodu testi" },
+    { href: "/breadboard", desc: "Breadboard kullanımı" },
+    { href: "/baglanti", desc: "CanSat Bağlantı Diagramı" },
   ];
 
   return (
     <div className="flex flex-col justify-start space-y-2 overflow-y-auto border-r px-4 py-4 lg:w-[350px] lg:min-w-[350px]">
-      <Link href={url} className="border-b pb-2 text-lg hover:underline">
+      <Link href={url} className="border-b pb-2 text-xl hover:underline">
         CanSat Kursunun İçeriği
       </Link>
       {links.map((link, i) => {
