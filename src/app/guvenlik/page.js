@@ -114,18 +114,20 @@ function HavyaKullanimi() {
 
 export default function page() {
   return (
-    <div className="flex h-auto w-full flex-col px-60 py-10">
-      <p className="mb-6 border-b pb-2 text-2xl">Güvenlik Talimatları</p>
-      <ul className="flex h-auto w-full flex-col gap-4 px-5">
-        <FalcataKullanimi />
-        <HavyaKullanimi />
-        <li className="mb-1 border-b pb-1">
-          Çalışma masalarında yiyecek ve içecek olmayacak
-        </li>
-        <li className="mb-1 border-b pb-1">
-          Hiç bir malzeme ağız ile tutulmayacak
-        </li>
-      </ul>
+    <div className="flex h-auto w-full flex-col px-40 py-10">
+      <div className="rounded border px-10 py-5">
+        <p className="mb-6 border-b pb-2 text-2xl">Güvenlik Talimatları</p>
+        <ul className="flex h-auto w-full flex-col gap-4 px-5">
+          <FalcataKullanimi />
+          <HavyaKullanimi />
+          <li className="mb-1 border-b pb-1">
+            Çalışma masalarında yiyecek ve içecek olmayacak
+          </li>
+          <li className="mb-1 border-b pb-1">
+            Hiç bir malzeme ağız ile tutulmayacak
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
