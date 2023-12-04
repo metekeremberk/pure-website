@@ -6,10 +6,11 @@ function Drawer() {
   const links = [
     { href: "/bilesenler", desc: "CanSat Alt Sistemleri ve Bileşenleri" },
     { href: "/arduino-ide", desc: "Arduino IDE Kurulumu" },
+    { href: "/blink-test", desc: "ESP32 ile Blink kodu testi" },
   ];
 
   return (
-    <div className="flex w-full basis-1/4 flex-col justify-start space-y-2 overflow-y-auto border-r px-4 py-4">
+    <div className="flex flex-col justify-start space-y-2 overflow-y-auto border-r px-4 py-4 lg:w-[350px] lg:min-w-[350px]">
       <Link href={url} className="border-b pb-2 text-lg hover:underline">
         CanSat Kursunun İçeriği
       </Link>
@@ -26,9 +27,9 @@ function Drawer() {
 
 export default function AdimAdimLayout({ children }) {
   return (
-    <div className="flex h-full w-auto items-stretch justify-center">
+    <div className="flex h-full items-stretch justify-center">
       <Drawer />
-      <div className="h-full basis-3/4 overflow-y-auto">{children}</div>
+      <div className="h-full w-full overflow-y-auto">{children}</div>
     </div>
   );
 }

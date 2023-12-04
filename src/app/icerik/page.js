@@ -13,9 +13,10 @@ const icerik = [
   { desc: "GPS alıcısı ile konum belirleme" },
   { desc: "CanSat'tan yer istasyonuna veri alma" },
   { desc: "Kamera kullanımı" },
-  { desc: "CanSat'in bir prototip kart üzerine entegrasyonu" },
+  { desc: "CanSat'in pertinax üzerine entegrasyonu" },
   { desc: "Uçuş" },
 ];
+
 export default function Cansat() {
   return (
     <div className="mx-5 flex flex-col child:border-b child:p-4">

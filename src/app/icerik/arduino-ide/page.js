@@ -3,7 +3,7 @@ import { ideSetupImages } from "./imports";
 
 export default function ArduinoIDEKurulumu() {
   return (
-    <div className="mx-5 flex flex-col child:border-b child:p-4">
+    <div className="mx-5 flex flex-col text-justify child:border-b child:p-4">
       <div>
         <h1 className="pb-6 pt-2 text-3xl">Arduino IDE Kurulumu</h1>
         <p>
