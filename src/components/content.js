@@ -129,74 +129,38 @@ export const kurallar = [
 ];
 
 export const telemetri = [
+  { isim: "TEAM_ID", telemetri: "Takımın benzersiz tanımlayıcısı." },
   {
-    isim: "Takım Numarası",
-    telemetri:
-      "Yarışma komitesi tarafından her bir takıma ayrı ayrı verilen 4 haneli bir tam sayıdır.",
+    isim: "MISSION_TIME",
+    telemetri: "Görevin başlangıcından itibaren geçen süre.",
   },
+  { isim: "PACKET_COUNT", telemetri: "Gönderilen veri paketlerinin sayısı." },
+  { isim: "MODE", telemetri: "Mevcut işletim modu (örneğin, UÇUŞ, BEKLEME)." },
   {
-    isim: "Paket Numarası",
-    telemetri:
-      "Görev Yükü’nden yer istasyonuna aktarılan telemetrilerin paket sayısını verir. Haberleşme frekansına göre birer birer ardışık bir şekilde artacaktır. İlk paket numarası 1’dir.",
+    isim: "STATE",
+    telemetri: "Sistemin mevcut durumu (örneğin, BEKLEME, AKTİF).",
   },
+  { isim: "ALTITUDE", telemetri: "Deniz seviyesine göre mevcut yükseklik." },
   {
-    isim: "Gönderme Zamanı",
+    isim: "PC_DEPLOYED",
     telemetri:
-      "Telemetri paketinin gönderildiği zamanı ve tarihi içerir. Gün/Ay/Yıl – Saat:Dakika:Saniye formatında olmalıdır.",
+      "Paraşütün açılıp açılmadığını gösteren bir bayrak (1 açıldı, 0 açılmadı).",
   },
+  { isim: "TEMPERATURE", telemetri: "Mevcut sıcaklık ölçümü." },
+  { isim: "VOLTAGE", telemetri: "Sistemin mevcut voltaj seviyesi." },
+  { isim: "PRESSURE", telemetri: "Mevcut atmosferik basınç ölçümü." },
+  { isim: "GPS_TIME", telemetri: "GPS modülünden gelen zaman verisi." },
+  { isim: "GPS_ALTITUDE", telemetri: "GPS modülünden gelen irtifa verisi." },
+  { isim: "GPS_LATITUDE", telemetri: "GPS modülünden gelen enlem verisi." },
+  { isim: "GPS_LONGITUDE", telemetri: "GPS modülünden gelen boylam verisi." },
   {
-    isim: "Uydu Statüsü",
-    telemetri:
-      "Model Uydu’nun görev süresince içinde bulunduğu durumu gösteren anlamlı bilgilerdir. (Bekleme, Yükselme, İniş, Kurtarma vb.)",
+    isim: "GPS_SATS",
+    telemetri: "GPS modülü tarafından algılanan uydu sayısı.",
   },
-  {
-    isim: "Yükseklik",
-    telemetri:
-      "Görev Yükü’nün anlık yüksekliğidir. Uçuşa başlayacağı konumu referans sıfır noktası kabul edilecektir. Biriminin metre (m) cinsinden olması gerekir. Veri hassasiyeti en az 0.01 m olmalıdır.",
-  },
-  {
-    isim: "Basınç",
-    telemetri:
-      "Görev Yükü’nün ölçtüğü anlık atmosferik basınç değeridir. Biriminin Paskal (Pa) olması gerekmektedir. Veri hassasiyeti en az 1 Pa olmalıdır.",
-  },
-  {
-    isim: "Sıcaklık",
-    telemetri:
-      "Görev Yükü’nün ölçtüğü anlık hava sıcaklığı verisidir. Biriminin derece Selsiyus (°C) olması gerekmektedir. Veri hassasiyeti en az 0.1 °C olmalıdır.",
-  },
-  {
-    isim: "Pil Gerilimi",
-    telemetri:
-      "Görev Yükü’nde bulunan tüm elektronik parçaları beslemek için kullanılan pilin gerilim değeridir. Biriminin Voltaj (V) olması gerekir. Veri hassasiyeti en az 0.1 V olmalıdır.",
-  },
-  {
-    isim: "Yunuslama",
-    telemetri:
-      "Görev Yükü’nün yunuslama (pitch) şeklindeki eğim açısıdır. Biriminin Derece (°) olması gerekmektedir. Veri hassasiyeti en az 0.1° olmalıdır.",
-  },
-  {
-    isim: "Yalpalanma",
-    telemetri:
-      "Görev Yükü’nün yalpalanma (roll) şeklindeki eğim açısıdır. Biriminin Derece (°) olması gerekmektedir. Veri hassasiyeti en az 0.1° olmalıdır.",
-  },
-  {
-    isim: "Yuvarlanma",
-    telemetri:
-      "Görev Yükü’nün yuvarlanma (yaw) şeklindeki eğim açısıdır. Biriminin Derece (°) olması gerekir. Veri hassasiyeti en az 0.1° olmalıdır.",
-  },
-  {
-    isim: "GPS Boylam",
-    telemetri:
-      "Görev Yükü’nün boylamsal konumudur. Biriminin Derece (°) olması gerekmektedir. Veri hassasiyeti en az 0.01° olmalıdır.",
-  },
-  {
-    isim: "GPS Enlem",
-    telemetri:
-      "Görev Yükü’nün enlemsel konumudur. Biriminin Derece (°) olması gerekir. Veri hassasiyeti en az 0.01° olmalıdır.",
-  },
-  {
-    isim: "GPS Yükseklik",
-    telemetri:
-      "Görev Yükü’nün deniz seviyesinden kaç metrede (m) olduğunu gösteren veridir. Biriminin Metre (m) olması gerekmektedir. Veri hassasiyeti en az 0.1 m olmalıdır.",
-  },
+  { isim: "ACC_X", telemetri: "X ekseni boyunca ivme." },
+  { isim: "ACC_Y", telemetri: "Y ekseni boyunca ivme." },
+  { isim: "ACC_Z", telemetri: "Z ekseni boyunca ivme." },
+  { isim: "MAG_X", telemetri: "X ekseni boyunca manyetik alan şiddeti." },
+  { isim: "MAG_Y", telemetri: "Y ekseni boyunca manyetik alan şiddeti." },
+  { isim: "MAG_Z", telemetri: "Z ekseni boyunca manyetik alan şiddeti." },
 ];

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cansat, tavsiyeler, talimatlar } from "@/components/content";
 import Arrow from "../../public/navbar/arrow.svg";
-import Parachute from "../../public/navbar/parachute.svg";
+import Logo from "../../public/navbar/logo.svg";
 
 function NavLink({ href, title, content, newTab }) {
   return (
@@ -53,19 +53,14 @@ function NavButton({ items, title, children }) {
 export default function Navbar() {
   return (
     <div className="sticky top-0 flex h-[10vh] items-center justify-between border-b bg-white px-10">
-      <Image src={Parachute} height={40} className="-rotate-[30deg]" />
+      <Image src={Logo} height={50} />
       <ul className="flex flex-row items-center gap-5">
         <NavButton items={cansat} title={"CanSat"}>
           <Link
             href="/"
             className="flex w-36 flex-grow flex-col justify-end rounded bg-slate-100 p-4 font-medium transition-colors hover:bg-slate-200"
           >
-            <Image
-              src={Parachute}
-              height={25}
-              className="ml-12 rotate-[30deg]"
-            />
-            <p className="-rotate-[10deg] pb-3">CanSat</p>
+            <p className="pb-3">CanSat</p>
             <div className="line-clamp-4 text-sm font-light text-gray-600">
               Cansat, düşük maliyetli ve kompakt bir uydu benzeri cihazdır.
               Genellikle eğitim ve araştırma amaçları için kullanılır.
